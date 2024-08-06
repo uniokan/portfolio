@@ -1,0 +1,65 @@
+
+@use "./../../../styles.scss" as mixins;
+
+section{
+    height:calc(mixins.$section-height - 100px);
+    background-color: rgb(20,29,47);
+    position: relative;
+    z-index:5;
+    padding: 100px 0 0 8%;
+    max-width:1920px;
+
+
+    h2{
+        
+        color:white;
+        margin-bottom: 50px;
+        font-size:90px;
+ 
+    }
+}
+
+main{
+    @include mixins.dFlex(space-between, center, 0);
+    position: relative;
+    z-index: 25;
+  
+}
+.about-me-container{
+    width:471px;
+    height:532px;
+    font-size: 16px;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    div:nth-child(2){
+        margin-bottom:50px;
+    }
+
+    div{
+        @include mixins.dFlex(center,center, 16px)
+    }
+
+}
+
+.img-container{
+    @include mixins.dFlex(none, center,0);
+
+    img{
+        height:409px;
+        width:409px;
+        border: 2px solid mixins.$line-green;
+        border-radius: 50%;
+    }
+    div{
+        height:2px;
+        width:300px;
+        background-color: mixins.$line-green ;
+    }
+}
+
+.purple-img{
+    position: absolute;
+    right:-450px;
+    top:50px;
+}

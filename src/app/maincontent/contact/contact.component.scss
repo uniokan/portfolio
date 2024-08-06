@@ -1,0 +1,83 @@
+@use "./../../../styles.scss" as mixins;
+
+section {
+    height: mixins.$section-height;
+    background-color: mixins.$background-color;
+    position: relative; 
+    max-width:1920px;
+}
+
+.headline-container {
+    @include mixins.dFlex(flex-start, center, 30px);
+    margin-right: 37%;
+
+    h2 {
+        font-size: 90px;
+    }
+}
+
+.headline-line {
+    flex: 1;
+    height: 2px;
+    background-color: mixins.$line-violett;
+}
+
+main{
+    margin-top:100px;
+    @include mixins.dFlex(space-between, flex-start, 200px);
+    padding:0 8%;
+}
+
+.input-container{
+    @include mixins.dFlex(none, none, 16px);
+    flex-direction: column;
+    flex:1;
+    max-width: 617px;
+    position: relative;
+    z-index:22;
+
+    input,textarea{
+        flex:1;
+        background-color: mixins.$background-color;
+        outline: unset;
+        border: 1px solid mixins.$line-violett;
+        padding:15px 25px 15px 25px;
+        color:white;
+        border-radius: 10px;
+        }
+
+    textarea{
+        padding:15px 25px 115px 25px;
+        height:1000px;
+        resize: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+   
+}
+
+.text-contact{
+    @include mixins.dFlex(flex-start, none, 24px);
+    flex-direction: column;
+    width:474px;
+
+    span{
+        font-size: 32px;
+        font-weight: bold;
+    }
+}
+
+.side-img{
+    position: absolute;
+    bottom:-100px;
+    left:-750px;
+    overflow-y: hidden;
+}
+
+.check-box-container{
+    @include mixins.dFlex(none, center, 8px);
+
+    a{
+        text-decoration: none;
+        color:mixins.$line-violett
+    }
+}

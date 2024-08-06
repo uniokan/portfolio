@@ -1,0 +1,29 @@
+@use "./../../../styles.scss" as mixins;
+
+@media screen and (max-width:1100px){
+
+    .img-container{
+         width:100%;
+    }
+    section{
+        flex-direction: column-reverse;
+        padding: 200px 0% 0 8%;
+    }
+
+    .line{
+        flex:1;
+    }
+
+    .comment-container{
+        margin-right:8%;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:650px){
+    .comment-container{
+       height:auto;
+       padding: 16px 32px;
+      
+    }
+}

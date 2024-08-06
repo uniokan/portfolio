@@ -1,0 +1,83 @@
+@media screen and (max-width: 1300px) {
+    .deg-90 {
+        font-size: 30px !important;
+    }
+
+
+
+    .my-data {
+        >span:nth-child(1) {
+            font-size: 60px;
+        }
+
+        >span:nth-child(2) {
+            font-size: 40px ;
+        }
+    }
+
+    .links-container {
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
+        a {
+            font-size: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    main {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center !important;
+    }
+
+    .about-me-container {
+        height: 300px;
+        margin-right: 0;
+    }
+
+    .about-me {
+        display: flex;
+        justify-content: center;
+        
+
+        div:nth-child(1) {
+            position: relative !important;
+        }
+    }
+
+    main{
+        padding-left:50px;
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+    .links-container {
+        a {
+            display: none;
+        }
+    }
+
+    .scroll-down {
+        display: none;
+    }
+
+   
+}
+
+@media screen and (max-width: 500px){
+    .my-data {
+        >span:nth-child(1) {
+            font-size: 45px;
+        }
+
+        >span:nth-child(2) {
+            font-size: 25px;
+        }
+    }
+}

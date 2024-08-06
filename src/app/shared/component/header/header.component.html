@@ -1,0 +1,23 @@
+<header>
+    <nav>
+        <span class="my-name">O<span class="half-color-text">k</span>a<span class="half-color-text">n</span></span>
+        <div>
+            <span>About me</span>
+            <span>Skills</span>
+            <span>Portfolio</span>
+        </div>
+
+        <div (click)=" toggleMenuBar()">
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+
+        <div *ngIf="isMenuBarVisible" class="menu-bar-content">
+            <span>About me</span>
+            <span>Skills</span>
+            <span>Portfolio</span>
+        </div>
+    </nav>
+</header>

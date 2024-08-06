@@ -1,0 +1,77 @@
+@use "./../../../../styles.scss" as mixins;
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 40px 8% 0 8%;
+    z-index: 300;
+    color: white;
+    font-size: 23px;
+    height: 90px;
+    background-color: #141D2F;
+}
+
+nav {
+    @include mixins.dFlex(space-between, center, 0);
+
+    .my-name {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    >div:nth-of-type(1) {
+        width: 326px;
+        height: 32px;
+        @include mixins.dFlex(center, center, 29px);
+    }
+
+    >div:nth-of-type(2) {
+
+        position: fixed;
+        top: 45px;
+        right: 8%;
+        display: none;
+        flex-direction: column;
+
+
+        &:hover {
+            transform: scale(1.07);
+        }
+
+        >div {
+            width: 20px;
+            height: 3px;
+            background-color: white;
+            margin-top: 8px;
+            cursor: pointer;
+            transition: all 125ms ease-in-out;
+        }
+
+        >div:nth-of-type(1) {
+            background-color: mixins.$line-violett !important;
+        }
+
+        >div:nth-of-type(3) {
+            background-color: mixins.$line-violett !important;
+        }
+    }
+}
+
+
+
+.half-color-text {
+    background: linear-gradient(to right, white 50%, mixins.$line-violett 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.menu-bar-content {
+    @include mixins.dFlex(center, flex-end, 8px);
+    flex-direction: column;
+    position: absolute;
+    right: 8%;
+    top: 100px;
+}

@@ -1,0 +1,117 @@
+@use "./../../../styles.scss" as mixins;
+
+@media screen and (max-width: 1200px) {
+    .my-skills-container {
+        h2 {
+            font-size: 70px;
+        }
+    }
+
+    .my-skils-icons {
+        gap: 30px;
+
+        img {
+            height: 70px;
+            width: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .my-skills-small {
+        height: mixins.$section-height;
+        width: 100vw;
+        max-width: 100%;
+        background-color: #141D2F;
+        position: relative;
+        color: white;
+        padding-left: 8%;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        gap:24px;
+
+        .my-skills-headline {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-right: -100px;
+        }
+
+        display:flex !important;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right:8%;
+    }
+
+    .my-skills-section {
+        display: none !important;
+    }
+
+    .my-skils-icons {
+        justify-content: flex-end;
+    }
+
+    .my-skills-container {
+        align-items: flex-end;
+        max-width: unset;
+    }
+
+    .btn {
+        align-self: center;
+    }
+
+    .my-skils-icons{
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .text-under-headline {
+        max-width: 400px;
+    }
+
+    .my-skills-container {
+        width: 100%;
+
+        p {
+            max-width: 400px;
+        }
+    }
+
+    
+
+
+}
+
+@media screen and (max-width: 660px) {
+    .my-skils-icons {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    section{
+        padding-top:150px;
+    }
+}
+
+
+@media screen and (max-width: 440px) {
+    .my-skils-icons {
+        width: unset;
+        gap:16px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .my-skils-icons {
+        img{
+            width:50px;
+            height:50px;
+        }
+    }
+
+}

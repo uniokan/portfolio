@@ -1,0 +1,40 @@
+<section>
+    <div class="headline-container">
+        <div class="headline-line"></div>
+        <h2>Contact</h2>
+    </div>
+
+    <main>
+        <div class="text-contact">
+            <span>Got a problem to solve?</span>
+            <p>Contact me throught this form, I am interested in hearing from you,
+                knowing your ideas and contribution to your projects with my work.
+            </p>
+            <p>Need a Frontend developer? <b>Contact me!</b></p>
+        </div>
+
+        <form class="input-container" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        
+            <input [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your name..." required>
+            <input [(ngModel)]="contactData.email" type="text" name="email" placeholder="Your Email..." pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+
+            <textarea #message="ngModel" minlength="8" [(ngModel)]="contactData.message" name="message" id="Your message..." required></textarea>
+
+            <div class="check-box-container">
+                <input type="checkbox">
+                <p>I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined</p>
+            </div>
+            
+
+
+
+            @if(!message.valid && message.touched){
+                <span>Please enter a Message</span>
+            }
+
+            <input type="submit">
+        </form>
+    </main>
+
+    <img class="side-img" src="/assets/img/contact/contact-side-img.png">
+</section>

@@ -1,0 +1,27 @@
+@use "./../../../styles.scss" as mixins;
+
+@media screen and (max-width:1200px) {
+    main {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:1070px) {
+    .text-contact {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width:750px) {
+    main{
+        flex-direction: column;
+    }
+    .text-contact {
+        max-width: unset;
+        width:auto;
+    }
+
+    section{
+        padding-bottom: 200px;
+    }
+}

@@ -1,0 +1,86 @@
+@use "./../../../styles.scss" as mixins;
+
+.my-skills-small{
+    display:none;
+}
+
+.my-skills-section {
+    height: mixins.$section-height;
+    width: 100%;
+    max-width:1920px;
+    background-color: #141D2F;
+    position: relative;
+
+
+    @include mixins.dFlex(space-between, center, 0);
+    color: white;
+    padding-left:8%;
+    box-sizing: border-box; 
+    font-size:16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    div:nth-child(2){
+        display:flex;
+    }
+
+   
+}
+
+.green-img{
+    position: absolute;
+    bottom:-600px;
+    left:-600px;
+    z-index: 3;
+}
+
+h2 {
+    font-size: 90px;
+
+}
+
+.my-skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width:400px;
+    max-height:571px;
+    margin-top:-60px;
+    position: relative;
+    z-index: 22;
+}
+
+.btn {
+    width:200px;
+    height:58px;
+    align-self: flex-end;
+}
+
+.my-skils-icons{
+    display:flex;
+    flex-wrap: wrap;
+    width:664px;
+    height:404px;
+    gap: 70px;
+
+    img{
+        position: relative;
+        z-index:20;
+        height: 101px;
+        width:88px;
+    }
+
+   
+}
+
+.line{
+    height:2px;
+    width:80px;
+    background-color: mixins.$line-violett;
+}
+
+.images:hover {
+    
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(-30px);
+
+}

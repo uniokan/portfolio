@@ -1,0 +1,69 @@
+@use "./../../../styles.scss" as mixins;
+
+.project-main-container{
+    @include mixins.dFlex(flex-end,center, 50px);
+    margin-right: 8%;
+
+
+    div:nth-child(1),
+    div:nth-child(2){
+        max-width:513px;
+    }
+    div:nth-child(2){
+        @include mixins.dFlex(none,none, 35px);
+        flex-direction: column;
+    }
+
+}
+
+.btn-container{
+    @include mixins.dFlex(none,none, 86px);
+
+    button:nth-child(1){
+        background-color: #9747FF;
+        cursor: pointer;
+
+        &:hover{
+            background-color: mixins.$line-green;
+        }
+    }
+
+    button:nth-child(2){
+        background-color: unset;
+        border: 1px solid mixins.$line-green;
+        cursor: pointer;
+
+        &:hover{
+            background-color: mixins.$line-green;
+        }
+    }
+}
+
+.project-describe{
+    margin-left:100px;
+    span:nth-child(1){
+        font-size: 23px;
+        color:mixins.$line-violett;
+        font-weight: bold;
+    }
+
+    span:nth-child(2){
+        font-size: 23px;
+        color:mixins.$line-green;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .project-main-container {
+
+        >div:nth-child(1),
+        >div:nth-child(2) {
+            max-width: 413px;
+
+            img{
+                width:413px;
+                margin-left: 0;
+            }
+        }
+    }
+}

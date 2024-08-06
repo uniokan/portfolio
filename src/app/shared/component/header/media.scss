@@ -1,0 +1,14 @@
+@use "./../../../../styles.scss" as mixins;
+
+@media screen and (max-width:650px) {
+    nav {
+        >div:first-of-type {
+            display: none;
+        }
+
+        >div:nth-of-type(2) {
+            display: flex;
+        }
+
+    }
+}

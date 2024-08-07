@@ -6,9 +6,13 @@
     }
 }
 
-@media screen and (max-width:1070px) {
+@media screen and (max-width:1100px) {
     .text-contact {
         max-width: 300px;
+    }
+
+    section{
+        padding-bottom: 130px;
     }
 }
 
@@ -21,7 +25,4 @@
         width:auto;
     }
 
-    section{
-        padding-bottom: 200px;
-    }
 }

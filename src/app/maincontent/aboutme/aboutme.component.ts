@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-aboutme',
@@ -9,5 +10,7 @@ import { Component } from '@angular/core';
 })
 export class AboutmeComponent {
 
-
+ngOnInit(){
+  AOS.init()
+}
 }

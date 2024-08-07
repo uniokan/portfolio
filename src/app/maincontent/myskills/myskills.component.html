@@ -1,6 +1,6 @@
 <section class="my-skills-section">
 
-    <div class="my-skils-icons">
+    <div data-aos="fade-right" class="my-skils-icons">
         @for (img of images; track img){
         <img class="images" src="{{img}}" alt="image">
 
@@ -8,7 +8,7 @@
     </div>
 
     <div>
-        <div class="my-skills-container">
+        <div data-aos="fade-left" class="my-skills-container">
             <h2>My skills</h2>
             <p>I have gained experience in building projects with different frontend technologies and concepts</p>
             <h3>Looking for another skill?</h3>
@@ -25,21 +25,22 @@
 
 <section class="my-skills-small">
 
-    <div class="my-skills-headline">
+    <div data-aos="fade-left" class="my-skills-headline">
         <h2>My skills</h2>
         <div class="line"></div>
     </div>
 
-    <p class="text-under-headline">I have gained experience in building projects with different frontend technologies and concepts</p>
+    <p data-aos="fade-left" class="text-under-headline">I have gained experience in building projects with different frontend
+        technologies and concepts</p>
 
-    <div class="my-skils-icons">
+    <div data-aos="fade-right" class="my-skils-icons">
         @for (img of images; track img){
         <div><img class="images" src="{{img}}" alt="image"></div>
 
         }
     </div>
 
-    <div>
+    <div data-aos="fade-left">
         <div class="my-skills-container">
             <h3>Looking for another skill?</h3>
             <p>Feel free to contact me I look forward to expanding on my previous knowledge</p>
@@ -48,6 +49,7 @@
 
 
     </div>
+
 
     <img class="green-img" src="/assets/img/my_skills/green-my-skills.png">
 </section>

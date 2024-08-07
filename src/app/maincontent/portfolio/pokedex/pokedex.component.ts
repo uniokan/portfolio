@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-pokedex',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./pokedex.component.scss','/src/app/shared/component/portfolio-projects-right.scss', '/src/app/maincontent/portfolio/media.scss']
 })
 export class PokedexComponent {
-
+  ngOnInit(){
+    AOS.init()
+  }
 }

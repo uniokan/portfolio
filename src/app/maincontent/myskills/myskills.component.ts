@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-myskills',
@@ -22,4 +23,8 @@ images:string []=[
   '/assets/img/my_skills/material-design.png',
   '/assets/img/my_skills/continually-learning.png'
 ]
+
+ngOnInit(){
+  AOS.init()
+}
 }

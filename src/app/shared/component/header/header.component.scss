@@ -1,20 +1,19 @@
 @use "./../../../../styles.scss" as mixins;
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: sticky;
     padding: 40px 8% 0 8%;
     z-index: 300;
     color: white;
     font-size: 23px;
     height: 90px;
     background-color: #141D2F;
+    top:0;
 }
 
 nav {
     @include mixins.dFlex(space-between, center, 0);
+    width:100%;
 
     .my-name {
         font-size: 35px;

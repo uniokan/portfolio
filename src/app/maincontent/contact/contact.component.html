@@ -1,11 +1,11 @@
 <section>
-    <div class="headline-container">
+    <div data-aos="fade-down-right" class="headline-container">
         <div class="headline-line"></div>
         <h2>Contact</h2>
     </div>
 
     <main>
-        <div class="text-contact">
+        <div class="text-contact" data-aos="fade-down-right">
             <span>Got a problem to solve?</span>
             <p>Contact me throught this form, I am interested in hearing from you,
                 knowing your ideas and contribution to your projects with my work.
@@ -13,7 +13,7 @@
             <p>Need a Frontend developer? <b>Contact me!</b></p>
         </div>
 
-        <form class="input-container" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <form data-aos="fade-down-left" class="input-container" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         
             <input [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your name..." required>
             <input [(ngModel)]="contactData.email" type="text" name="email" placeholder="Your Email..." pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
@@ -29,7 +29,7 @@
 
 
             @if(!message.valid && message.touched){
-                <span>Please enter a Message</span>
+                <div>Please enter a Message</div>
             }
 
             <input type="submit">

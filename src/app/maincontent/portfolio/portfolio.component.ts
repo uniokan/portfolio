@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { JoinprojectComponent } from './joinproject/joinproject.component';
 import { ElpollolocoComponent } from './elpolloloco/elpolloloco.component';
 import { PokedexComponent } from './pokedex/pokedex.component';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-portfolio',
@@ -12,4 +13,7 @@ import { PokedexComponent } from './pokedex/pokedex.component';
 )
 export class PortfolioComponent {
 
+  ngOnInit(){
+    AOS.init()
+  }
 }

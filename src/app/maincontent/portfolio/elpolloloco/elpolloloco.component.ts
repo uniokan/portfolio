@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-elpolloloco',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./elpolloloco.component.scss','/src/app/shared/component/portfolio-projects-left.scss', '/src/app/maincontent/portfolio/media.scss']
 })
 export class ElpollolocoComponent {
-
+  ngOnInit(){
+    AOS.init()
+  }
 }

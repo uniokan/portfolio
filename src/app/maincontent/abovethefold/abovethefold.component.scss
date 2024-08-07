@@ -2,11 +2,12 @@
 
 
 section {
-    height: calc(100vh - 297px);
+    // height: calc(100vh - 179px);
  
     background-color: rgb(20, 29, 47);
-    padding-top: 297px;
+    padding-top: 179px;
     max-width:1920px;
+
 
 }
 
@@ -120,7 +121,7 @@ main {
     position: absolute;
     height: 70vh;
     /* entspricht 70% der Viewport-Höhe */
-    bottom: -25vh;
+    top:500px;
     /* entspricht 25% der Viewport-Höhe */
     right: 0;
     left: 0;

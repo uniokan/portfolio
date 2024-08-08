@@ -1,0 +1,19 @@
+.project-main-container {
+    img {
+        height: 379px;
+        width: 620px;
+        margin-right: -50px !important;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width:515px) {
+    .project-main-container {
+        img {
+            height: 225px;
+            width: 300px;
+            margin-right: -50px !important;
+        }
+
+    }
+}               

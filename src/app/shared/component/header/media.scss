@@ -1,6 +1,6 @@
 @use "./../../../../styles.scss" as mixins;
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:1100px) {
     nav {
         >div:first-of-type {
             display: none;
@@ -8,7 +8,14 @@
 
         >div:nth-of-type(2) {
             display: flex;
+             top:unset;
         }
 
+    }
+
+    header{
+        padding: 0 8% 0 8%;
+        display:flex;
+        align-items: center;
     }
 }

@@ -2,22 +2,21 @@
     <nav>
         <span class="my-name">O<span class="half-color-text">k</span>a<span class="half-color-text">n</span></span>
         <div>
-            <span>About me</span>
-            <span>Skills</span>
-            <span>Portfolio</span>
+            <a href="#about-me">About me</a>
+            <a href="#my-skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
         </div>
 
         <div (click)=" toggleMenuBar()">
             <div></div>
             <div></div>
             <div></div>
-
         </div>
 
         <div *ngIf="isMenuBarVisible" class="menu-bar-content">
-            <span>About me</span>
-            <span>Skills</span>
-            <span>Portfolio</span>
+            <a (click)="toggleMenuBar()" href="#about-me">About me</a>
+            <a (click)="toggleMenuBar()" href="#my-skills-small">Skills</a>
+            <a (click)="toggleMenuBar()" href="#portfolio">Portfolio</a>
         </div>
     </nav>
 </header>

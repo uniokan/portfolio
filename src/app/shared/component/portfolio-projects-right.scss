@@ -3,7 +3,8 @@
 .project-main-container{
     @include mixins.dFlex(flex-end,center, 50px);
     margin-right: 8%;
-
+    position: relative;
+    z-index:5;
 
     div:nth-child(1),
     div:nth-child(2){
@@ -16,25 +17,29 @@
 
 }
 
-.btn-container{
-    @include mixins.dFlex(none,none, 86px);
+.btn-container {
+    @include mixins.dFlex(none, none, 86px);
 
-    button:nth-child(1){
-        background-color: #9747FF;
-        cursor: pointer;
+    :first-child {
+       > button {
+            background-color: #9747FF;
+            cursor: pointer;
 
-        &:hover{
-            background-color: mixins.$line-green;
+            &:hover {
+                background-color: mixins.$line-green;
+            }
         }
     }
 
-    button:nth-child(2){
-        background-color: unset;
-        border: 1px solid mixins.$line-green;
-        cursor: pointer;
+    :last-child {
+        >button {
+            background-color: unset;
+            border: 1px solid mixins.$line-green;
+            cursor: pointer;
 
-        &:hover{
-            background-color: mixins.$line-green;
+            &:hover {
+                background-color: mixins.$line-green;
+            }
         }
     }
 }
@@ -53,17 +58,3 @@
     }
 }
 
-@media screen and (max-width:460px) {
-    .project-main-container {
-
-        >div:nth-child(1),
-        >div:nth-child(2) {
-            max-width: 413px;
-
-            img{
-                width:413px;
-                margin-left: 0;
-            }
-        }
-    }
-}

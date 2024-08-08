@@ -18,7 +18,7 @@ section{
 .img-container{
     @include mixins.dFlex(none, center, 0);
     position: relative;
-    z-index: 2;
+    z-index: 10;
    
 }
 
@@ -49,4 +49,5 @@ section{
 .side-img{
     position: absolute;
     right:-350px;
+    z-index:2;
 }

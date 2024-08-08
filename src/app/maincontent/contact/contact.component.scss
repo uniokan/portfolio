@@ -81,3 +81,13 @@ main{
         color:mixins.$line-violett
     }
 }
+
+.mail-submit-btn{
+    font-size: 23px;
+    transition: all 125ms ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+        background-color: mixins.$line-violett !important;
+    }
+}

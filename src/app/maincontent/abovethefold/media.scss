@@ -3,15 +3,13 @@
         font-size: 30px !important;
     }
 
-
-
     .my-data {
-        >span:nth-child(1) {
-            font-size: 60px;
+        >h1 {
+            font-size: 60px !important;
         }
 
-        >span:nth-child(2) {
-            font-size: 40px ;
+        >h2 {
+            font-size: 40px !important;
         }
     }
 
@@ -27,16 +25,16 @@
     }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1100px) {
 
     main {
         flex-direction: column;
-        gap: 40px;
         align-items: center !important;
+        gap:65px;
     }
 
     .about-me-container {
-        height: 300px;
+        height: 260px;
         margin-right: 0;
     }
 
@@ -55,12 +53,22 @@
     }
 
     .img-container{
-        top:145px;
+        top:190px;
+        height:645px;
+        left:100px;
+        img{
+          width:440px;
+          height:525px;
+        }
+    }
+
+    .atf-bottom-background{
+        top:390px;
     }
 
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 700px) {
     .links-container {
         a {
             display: none;
@@ -74,14 +82,28 @@
    
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     .my-data {
-        >span:nth-child(1) {
-            font-size: 45px;
+        >h1 {
+            font-size: 45px !important;
         }
 
-        >span:nth-child(2) {
-            font-size: 25px;
+        >h2 {
+            font-size: 25px !important;
         }
+    }
+
+ 
+}
+
+@media screen and (min-width:2200px){
+    section{
+        position: relative;
+    }
+
+    .atf-bottom-background{
+        height: 15vh;
+        bottom:0;
+        top:unset;
     }
 }

@@ -1,5 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/poppins-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
 $line-violett: #9747FF;
 $line-green: #70E61C;
 $section-height: calc(100vh - 130px);
@@ -21,18 +30,38 @@ section {
     padding-top: 250px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden !important;
     color: white;
     height: 100%;
 }
-
+     
 .btn {
     padding: 15px 30px 15px 30px;
     background-color: #70E61C;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
+    transition: all 125ms ease-in-out;
+    font-size: 23px;
+
+    &:hover{
+       background-color: $line-violett;
+    }
+}
+
+h1,h2{
+    text-shadow: 0px 0px 5px white;
 }
 
 @media screen and (max-width:1100px) {
@@ -51,5 +80,19 @@ body {
 @media screen and (max-width:500px) {
     h2 {
         font-size: 40px !important;
+    }
+
+    .btn{
+        font-size:16px;
+    }
+}
+
+@media screen and (min-width:2200px) {
+
+    body{
+        display:flex;
+        justify-content: center;
+        background-color: rgb(20,29,47);
+        width:100%;
     }
 }

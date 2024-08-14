@@ -15,7 +15,7 @@ main {
 }
 
 .img-container {
-    width: 646px;
+
     height: 705px;
     position: relative;
     top: 106px;
@@ -128,5 +128,10 @@ main {
     left: 0;
     width: 100%;
     z-index: 3;
+}
+
+.i-am-de{
+    font-size:40px;
+    margin-right: -100px;
 }
 

@@ -1,14 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import AOS from 'aos';
+import { TranslationService } from '../../translation.service';
 
 @Component({
   selector: 'app-myskills',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './myskills.component.html',
   styleUrls: ['./myskills.component.scss', './media.scss']
 })
 export class MyskillsComponent {
+
+translate = inject(TranslationService);
 
 images:string []=[
   '/assets/img/my_skills/html.png',

@@ -7,6 +7,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { CommentsComponent } from './comments/comments.component';
 
+
 @Component({
   selector: 'app-maincontent',
   standalone: true,
@@ -16,5 +17,6 @@ import { CommentsComponent } from './comments/comments.component';
   styleUrl: './maincontent.component.scss'
 })
 export class MaincontentComponent {
+
 
 }

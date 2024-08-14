@@ -29,3 +29,9 @@
         padding-top:100px;
     }
 }
+
+@media screen and (max-width:480px){
+    .side-img{
+        left:-550px;
+    }
+}

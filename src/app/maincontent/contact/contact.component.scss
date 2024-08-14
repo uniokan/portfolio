@@ -5,6 +5,37 @@ section {
     position: relative; 
     max-width:1920px;
     padding:250px 0 250px 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    .send-mail{
+        position: absolute;
+        top: 50%;
+        right: 30%;
+        left:30%;
+        text-align: center;
+        background-color: rgb(20,29,47);
+        border: 1px solid mixins.$line-green;
+        border-radius: 10px;
+        padding: 8px 16px;
+        box-shadow: 5px 5px 5px;
+        font-size: 14px !important;
+
+    }
+
+    .success-mail{
+        transform: translateY(780px);
+        transition: transform 1s ease-in-out;
+        z-index: 30;
+
+    }
+
+    .show-succes-mail{
+        transition: transform 1s ease-in-out;
+        transform: translateY(0);
+        z-index: 200;
+
+    }
 }
 
 .headline-container {
@@ -55,6 +86,11 @@ main{
    
 }
 
+.red{
+    color:red;
+    font-size: 12px;
+}
+
 .text-contact{
     @include mixins.dFlex(flex-start, none, 24px);
     flex-direction: column;
@@ -89,5 +125,17 @@ main{
 
     &:hover{
         background-color: mixins.$line-violett !important;
+    }
+}
+
+.arrow-up{
+    position: absolute;
+    right:8%;
+    bottom:50px;
+    transition: all 125ms ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.07);
     }
 }

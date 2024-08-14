@@ -1,8 +1,9 @@
 <header>
     <nav>
-        <span class="my-name">O<span class="half-color-text">k</span>a<span class="half-color-text">n</span></span>
+        <a href="/"><span class="my-name">O<span class="half-color-text">k</span>a<span
+                    class="half-color-text">n</span></span></a>
         <div>
-            <a href="#about-me">About me</a>
+            <a href="#about-me">{{'about-me' | translate}}</a>
             <a href="#my-skills">Skills</a>
             <a href="#portfolio">Portfolio</a>
         </div>
@@ -11,6 +12,12 @@
             <div></div>
             <div></div>
             <div></div>
+        </div>
+
+        <div class="language">
+            <span [ngStyle]="{'color': translate.enActive? '#9747FF' : 'white'}" (click)="translate.switchLanguage('en'); translate.enClicked()">EN</span>
+            <span>|</span>
+            <span [ngStyle]="{'color': translate.deActive? '#9747FF' : 'white'}" (click)="translate.switchLanguage('de');  translate.deClicked()">DE</span>
         </div>
 
         <div *ngIf="isMenuBarVisible" class="menu-bar-content">

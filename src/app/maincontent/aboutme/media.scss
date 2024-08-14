@@ -1,39 +1,56 @@
 @use '../../../styles.scss' as mixins;
- 
+
 @media screen and (max-width: 980px) {
-    section{
-        padding-top:200px;
+    section {
+        padding-top: 200px;
     }
 
- 
+
 }
 
-@media screen and (max-width: 1340px){
-    .img-container{  
-        img{
-            height:309px;
-            width:309px;
+@media screen and (max-width: 1100px) {
+    section {
+        padding-bottom: 130px;
+    }
+
+
+}
+
+@media screen and (max-width: 1340px) {
+    .img-container {
+        img {
+            height: 309px;
+            width: 309px;
             position: relative;
-            z-index:20;
+            z-index: 20;
         }
-        div{
-            height:2px;
-            width:70px;
+
+        div {
+            height: 2px;
+            width: 70px;
             background-color: mixins.$line-green ;
             position: relative;
-            z-index:20;
+            z-index: 20;
         }
     }
 }
 
-@media screen and (max-width: 960px){
-    section{
-        padding-right:8%;
+@media screen and (max-width: 960px) {
+    section {
+        padding-right: 8%;
     }
-    .img-container{  
-        img,div{
-           display:none;
+
+    .img-container {
+
+        img,
+        div {
+            display: none;
         }
     }
 }
 
+@media screen and (max-width: 700px) {
+    .about-me-container {
+        width: unset;
+    }
+}

@@ -1,53 +1,110 @@
 @use "./../../../styles.scss" as mixins;
 
-section{
-    padding-top:250px;
+section {
+    padding-top: 250px;
     background-color: mixins.$background-color;
     @include mixins.dFlex(none, center, 50px);
-    padding-left:15%;
+    padding-left: 15%;
     position: relative;
-    max-width:1920px;
+    max-width: 1920px;
 }
 
-.line{
-    width:100px;
-    height:2px;
+.line {
+    width: 100px;
+    height: 2px;
     background-color: mixins.$line-violett;
 }
 
-.img-container{
+.img-container {
     @include mixins.dFlex(none, center, 0);
     position: relative;
     z-index: 10;
-   
+
 }
 
-.comment-container{
-    @include mixins.dFlex(none, none, 50px);
-    flex-direction: column;
-    border:4px solid mixins.$line-green;
-    padding: 48px 96px 48px 96px;
-    border-radius: 32px;
-    height:272px;
-    box-sizing: border-box;
+main{
+    @include mixins.dFlex(center, center, 24px);
+    flex-direction: column
+}
 
-    p{
-        flex:1;
+.arrow-container {
+    @include mixins.dFlex(none, center, 8px);
+    transition: all 125ms ease-in-out;
+    position: relative;
+    z-index:30;
+
+    >img {
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.07);
+        }
+    }
+
+    >span {
+        color: mixins.$line-violett;
+        font-size: 40px;
     }
 }
 
-.comments-line{
-    flex:1;
-    height:2px;
+.hidden-paragraph {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+ 
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out, max-height 0.5s ease-out;
+    overflow: hidden;
+}
+
+.show-paragraph {
+    @include mixins.dFlex(none, none, 50px);
+    flex-direction: column;
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+.toggle-button {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #007bff;
+    /* Farbe des Pfeils */
+}
+
+
+.comment-container {
+    @include mixins.dFlex(flex-start, none, 0);
+    flex-direction: column;
+    border: 4px solid mixins.$line-green;
+    padding: 48px 96px 48px 96px;
+    border-radius: 32px;
+    height: 350px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 50;
+
+
+    p {
+        flex: 1;
+    }
+}
+
+.comments-line {
+    flex: 1;
+    height: 2px;
     background-color: mixins.$line-violett;
 }
 
-.author-container{
+.author-container {
     @include mixins.dFlex(none, center, 20px);
 }
 
-.side-img{
+.side-img {
     position: absolute;
-    right:-350px;
-    z-index:2;
+    right: 0;
+    z-index: 2;
 }

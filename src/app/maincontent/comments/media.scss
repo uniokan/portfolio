@@ -17,11 +17,14 @@
     .comment-container{
         margin-right:8%;
     }
+
+    .arrow-container{
+        margin-right: 8%;
+    }
 }
 
 @media screen and (max-width:650px){
     .comment-container{
-       height:auto;
        padding: 16px 32px;
       
     }

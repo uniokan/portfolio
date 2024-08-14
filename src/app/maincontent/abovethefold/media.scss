@@ -30,7 +30,7 @@
     main {
         flex-direction: column;
         align-items: center !important;
-        gap:65px;
+        gap: 65px;
     }
 
     .about-me-container {
@@ -41,29 +41,30 @@
     .about-me {
         display: flex;
         justify-content: center;
-        
+
 
         div:nth-child(1) {
             position: relative !important;
         }
     }
 
-    main{
-        padding-left:50px;
+    main {
+        padding-left: 50px;
     }
 
-    .img-container{
-        top:190px;
-        height:645px;
-        left:100px;
-        img{
-          width:440px;
-          height:525px;
+    .img-container {
+        top: 190px;
+        height: 645px;
+        left: -200px;
+
+        img {
+            width: 360px;
+            height: 525px;
         }
     }
 
-    .atf-bottom-background{
-        top:390px;
+    .atf-bottom-background {
+        top: 390px;
     }
 
 }
@@ -79,10 +80,10 @@
         display: none;
     }
 
-   
+
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .my-data {
         >h1 {
             font-size: 45px !important;
@@ -93,17 +94,21 @@
         }
     }
 
- 
+    .i-am-de{
+        font-size:20px !important;
+    }
+
+
 }
 
-@media screen and (min-width:2200px){
-    section{
+@media screen and (min-width:2200px) {
+    section {
         position: relative;
     }
 
-    .atf-bottom-background{
+    .atf-bottom-background {
         height: 15vh;
-        bottom:0;
-        top:unset;
+        bottom: 0;
+        top: unset;
     }
 }

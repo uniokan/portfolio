@@ -8,11 +8,11 @@
         <div class="about-me-container">
             <div class="about-me">
                 <div>
-                    <span class="deg-90 mr-80 i-am">I am</span>
+                    <span [ngClass]="translate.deActive? 'i-am-de' : 'i-am'" class="deg-90 mr-80 i-am">{{'i-am' | translate}}</span>
                     <div class="my-data">
                         <h1 id="my-name">Okan Özel</h1>
                         <h2 id="my-title">Frontend Developer</h2>
-                        <a href="#contact"><button class="btn">Lets Talk</button></a>
+                        <a href="#contact"><button class="btn">{{'talk' | translate}}</button></a>
                     </div>
                 </div>
             </div>
@@ -26,9 +26,9 @@
         </span>
         <div class="links-container">
             <div></div>
-            <img src="/assets/img/above_the_fold/twitter.png" alt="">
-            <img src="/assets/img/above_the_fold/mail.png" alt="">
-            <img src="/assets/img/above_the_fold/linkIn.png" alt="">
+            <a href="https://github.com/uniokan" target="_blank"><img src="/assets/img/above_the_fold/twitter.png" alt=""></a>
+            <a href="mailto:mail@okan-oezel.de" target="_blank"><img src="/assets/img/above_the_fold/mail.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/okan-%C3%B6zel-782b412aa/" target="_blank"><img src="/assets/img/above_the_fold/linkIn.png" alt=""></a>
             <a href="mailto:mail&#64;okan-oezel.de">mail&#64;okan-oezel.de</a>
         </div>
     </div>

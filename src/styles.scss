@@ -31,6 +31,7 @@ section {
 }
 
 html{
+    overflow-x: hidden !important;
     scroll-behavior: smooth;
 }
 
@@ -41,7 +42,7 @@ a{
 
 body {
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden !important;
+ 
     color: white;
     height: 100%;
 }
@@ -64,6 +65,28 @@ h1,h2{
     text-shadow: 0px 0px 5px white;
 }
 
+::-webkit-scrollbar {
+    width: 10px; /* für vertikale Balken */
+    height: 12px; /* für horizontale Balken */
+}
+
+/* Der "Track" (Hintergrund) des Scrollbalkens */
+::-webkit-scrollbar-track {
+    background: #141D2F;
+}
+
+/* Die "Thumb" (der bewegliche Teil) des Scrollbalkens */
+::-webkit-scrollbar-thumb {
+    background-color: $line-violett; /* Farbe des Scrollbalkens */
+    border-radius: 32px; /* Ecken abrunden */
+    border: 3px solid $line-green; /* Abstand zwischen Thumb und Track */
+}
+
+/* "Thumb" beim Hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
 @media screen and (max-width:1100px) {
     section {
         padding-top:130px !important;
@@ -79,7 +102,7 @@ h1,h2{
 
 @media screen and (max-width:500px) {
     h2 {
-        font-size: 40px !important;
+        font-size: 37px !important;
     }
 
     .btn{

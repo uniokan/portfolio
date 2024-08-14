@@ -4,12 +4,22 @@ footer {
     background-color: mixins.$background-color;
     height: 100px;
     position: relative;
-    z-index: 10;
+    z-index: 40;
     height: 291px;
     @include mixins.dFlex(space-between, center, 0);
     padding: 0 8%;
     border-top: 2px solid mixins.$line-green;
-    max-width:1920px;
+    max-width: 1920px;
+
+    a {
+        transition: all 125ms ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            color: mixins.$line-violett;
+        }
+    }
+
 
     .name-year {
         font-size: 23px;
@@ -43,6 +53,6 @@ footer {
     font-weight: bold;
 }
 
-.impressum-mobile{
-    display:none;
+.impressum-mobile {
+    display: none;
 }

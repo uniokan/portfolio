@@ -69,10 +69,16 @@
             max-width: 413px;
 
             img {
-                width: 413px;
+                width: 270px;
                 margin-left: 0;
             }
 
         }
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .btn-container{
+        gap:24px;
     }
 }

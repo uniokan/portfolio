@@ -1,0 +1,32 @@
+@use './../../../../styles.scss' as mixins;
+
+section {
+    background-color: #141D2F;
+    padding: 100px 8% 100px 8% !important;
+    position: relative;
+
+    a {
+        transition: all 125ms ease-in-out;
+        &:hover   {
+            color:mixins.$line-violett;
+        }         
+        }
+    }
+
+
+.back-to-index{
+    position: absolute;
+    right:8%;
+    top:100px;
+
+    img{
+        transition: transform 125ms ease-in-out;
+        rotate: 270deg;
+        cursor: pointer;
+        
+
+        &:hover{
+            transform: scale(1.07);
+        }
+    }
+}

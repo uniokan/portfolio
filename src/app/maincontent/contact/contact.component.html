@@ -15,21 +15,21 @@
 
         <form data-aos="fade-down-left" class="input-container" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         
-            <input [ngStyle]="{'border': (name.touched || submitted) && !name.valid? '1px solid red': '1px solid #9747FF' }" #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" placeholder="Name..." required>
+            <input [ngStyle]="{'border': (name.touched || submitted) && !name.valid? '1px solid red': '1px solid #4946FD' }" #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" placeholder="Name..." required>
             @if(!name.valid && (name.touched || submitted)){
                 <div class="red">{{'name-error' | translate}}</div>
             }
-            <input [ngStyle]="{'border': (email.touched || submitted)  && !email.valid? '1px solid red': '1px solid #9747FF' }" #email="ngModel" [(ngModel)]="contactData.email" type="text" name="email" placeholder="E-mail..." pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+            <input [ngStyle]="{'border': (email.touched || submitted)  && !email.valid? '1px solid red': '1px solid #4946FD' }" #email="ngModel" [(ngModel)]="contactData.email" type="text" name="email" placeholder="E-mail..." pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
             @if(!email.valid && (email.touched || submitted)){
                 <div class="red">{{'email-error' | translate}}</div>
             }
-            <textarea [ngStyle]="{'border': (message.touched || submitted)  && !message.valid? '1px solid red': '1px solid #9747FF' }" #message="ngModel" minlength="20" [(ngModel)]="contactData.message" placeholder="{{'message' | translate}}..." name="message" id="Your message..." required></textarea>
+            <textarea [ngStyle]="{'border': (message.touched || submitted)  && !message.valid? '1px solid red': '1px solid #4946FD' }" #message="ngModel" minlength="20" [(ngModel)]="contactData.message" placeholder="{{'message' | translate}}..." name="message" id="Your message..." required></textarea>
             @if(!message.valid && (message.touched || submitted)){
                 <div class="red">{{'message-error' | translate}}</div>
             }
             <div class="check-box-container">
                 <input type="checkbox" name="agree" ngModel #agree="ngModel" required>
-                <p> {{'privacy-policy1' | translate}}<a routerLink="/imprint" target="_blank">{{'privacy-policy2' | translate}}</a>{{'privacy-policy3' | translate}}</p>
+                <p> {{'privacy-policy1' | translate}}<a routerLink="/imprint">{{'privacy-policy2' | translate}}</a>{{'privacy-policy3' | translate}}</p>
             </div>
             @if((agree.touched || submitted)  && !agree.valid){
                 <div class="red">{{'privacy-error' | translate}}</div>
@@ -39,7 +39,7 @@
         </form>
     </main>
 
-    <img class="side-img" src="/assets/img/contact/contact-side-img.png">
+ 
     <a href="#header"><img class="arrow-up" src="/assets/img/contact/arrow-up.png"></a>
 
     <span [ngClass]="success ? 'show-succes-mail' : 'success-mail'" class="send-mail"> Ich habe Ihre Nachricht erhalten und werde mich in Kürze bei Ihnen melden!</span>

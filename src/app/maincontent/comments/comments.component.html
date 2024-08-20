@@ -12,7 +12,7 @@
                 </div>
             </div>
 
-            <div [ngClass]="comment==1? 'show-paragraph' : 'hidden-paragraph'">
+            <div  [ngClass]="comment==1? 'show-paragraph' : 'hidden-paragraph'">
                 <p>
                     {{'daniela-comment' | translate}}
                 </p>
@@ -24,11 +24,13 @@
         </div>
 
         <div class="arrow-container">
-            <img (click)="showLastComment()" src="/assets/img/comments/arrow_backward.png" alt="">
-            <span [ngStyle]="{ 'color': comment == 0 ? '#9747FF' : 'white' }">.</span>
-            <span [ngStyle]="{ 'color': comment == 1 ? '#9747FF' : 'white' }">.</span>
-            <img  (click)="showNextComment()" src="/assets/img/comments/arrow_forward.png" alt="">
+            <img (click)="showLastComment()" src="/assets/img/comments/arrow-backward.svg" alt="">
+            <span [ngStyle]="{ 'color': comment == 0 ? '#4946FD' : 'white' }">.</span>
+            <span [ngStyle]="{ 'color': comment == 1 ? '#4946FD' : 'white' }">.</span>
+            <img  (click)="showNextComment()" src="/assets/img/comments/arrow-forward.svg" alt="">
         </div>
+
+    
     </main>
 
 
@@ -41,4 +43,5 @@
     </div>
 
     <img class="side-img" src="/assets/img/comments/green-img.png">
+    <img class="side-imgg" src="/assets/img/contact/contact-side-img.png">
 </section>

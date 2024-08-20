@@ -22,7 +22,7 @@
 
     :first-child {
        > button {
-            background-color: #9747FF;
+        background-color: mixins.$line-violett;
             cursor: pointer;
 
             &:hover {

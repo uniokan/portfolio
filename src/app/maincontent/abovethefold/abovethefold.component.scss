@@ -6,6 +6,9 @@ section {
     background-color: rgb(20, 29, 47);
     padding-top: 179px;
     max-width: 1920px;
+    height:calc(100vh - 130px - 179px);
+    overflow: hidden;
+    
 }
 
 main {
@@ -51,7 +54,7 @@ main {
 
     h2 {
         font-size: 58px;
-        color: #9747FF;
+        color: mixins.$line-violett;
         margin-top: -25px;
         text-shadow: 0px 0px 10px #9747ff !important;
     }
@@ -85,14 +88,13 @@ main {
 .scroll-down {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 60px;
     color: white;
     transform: rotate(90deg);
-    z-index: 4;
+    z-index: 20;
 }
 
 .atf-bottom {
-    position: relative;
     @include mixins.dFlex(space-between, center, 0);
     z-index: 20;
 }
@@ -103,7 +105,7 @@ main {
     bottom: 0;
     @include mixins.dFlex(none, center, $g: 32px);
     font-size: 32px;
-    z-index: 4;
+    z-index: 9;
 
     a {
         text-decoration: none;

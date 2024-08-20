@@ -9,8 +9,8 @@
     src: url('/assets/fonts/poppins-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 
-$line-violett: #9747FF;
-$line-green: #70E61C;
+$line-violett: #4946FD;
+$line-green: #01BEE8;
 $section-height: calc(100vh - 130px);
 $background-color: #141D2F;
 
@@ -42,14 +42,14 @@ a{
 
 body {
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- 
+    overflow: hidden !important;
     color: white;
     height: 100%;
 }
      
 .btn {
     padding: 15px 30px 15px 30px;
-    background-color: #70E61C;
+    background-color: #01BEE8;
     color: white;
     border-radius: 10px;
     cursor: pointer;
@@ -66,20 +66,20 @@ h1,h2{
 }
 
 ::-webkit-scrollbar {
-    width: 10px; /* für vertikale Balken */
-    height: 12px; /* für horizontale Balken */
+    width: 4px; /* für vertikale Balken */
+    height: 2px; /* für horizontale Balken */
 }
 
 /* Der "Track" (Hintergrund) des Scrollbalkens */
 ::-webkit-scrollbar-track {
-    background: #141D2F;
+    background: $background-color;
 }
 
 /* Die "Thumb" (der bewegliche Teil) des Scrollbalkens */
 ::-webkit-scrollbar-thumb {
     background-color: $line-violett; /* Farbe des Scrollbalkens */
-    border-radius: 32px; /* Ecken abrunden */
-    border: 3px solid $line-green; /* Abstand zwischen Thumb und Track */
+    border-radius: 200px; /* Ecken abrunden */
+    // border: 3px solid $line-green; /* Abstand zwischen Thumb und Track */
 }
 
 /* "Thumb" beim Hover */
@@ -110,7 +110,7 @@ h1,h2{
     }
 }
 
-@media screen and (min-width:2200px) {
+@media screen and (min-width:1920px) {
 
     body{
         display:flex;

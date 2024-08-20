@@ -9,6 +9,15 @@ section {
     max-width: 1920px;
 }
 
+
+.side-imgg{
+    position: absolute;
+    bottom:-1100px;
+    left:-374px;
+    z-index: 2;
+    transform: rotate(45deg)
+}
+
 .line {
     width: 100px;
     height: 2px;
@@ -22,7 +31,7 @@ section {
 
 }
 
-main{
+main {
     @include mixins.dFlex(center, center, 24px);
     flex-direction: column
 }
@@ -31,7 +40,7 @@ main{
     @include mixins.dFlex(none, center, 8px);
     transition: all 125ms ease-in-out;
     position: relative;
-    z-index:30;
+    z-index: 30;
 
     >img {
 
@@ -44,6 +53,7 @@ main{
     >span {
         color: mixins.$line-violett;
         font-size: 40px;
+        margin-top: -23px;
     }
 }
 
@@ -51,7 +61,7 @@ main{
     max-height: 0;
     opacity: 0;
     transform: translateY(-20px);
- 
+
     transition: transform 0.5s ease-out, opacity 0.5s ease-out, max-height 0.5s ease-out;
     overflow: hidden;
 }
@@ -82,7 +92,7 @@ main{
     padding: 48px 96px 48px 96px;
     border-radius: 32px;
     height: 350px;
-    overflow-y: auto;
+    overflow: hidden;
     box-sizing: border-box;
     position: relative;
     z-index: 50;
@@ -91,6 +101,14 @@ main{
     p {
         flex: 1;
     }
+}
+
+.show-paragraph {
+    max-height: 100%;
+    overflow: auto;
+    padding-right: 15px;
+
+    box-sizing:content-box;
 }
 
 .comments-line {
@@ -105,6 +123,6 @@ main{
 
 .side-img {
     position: absolute;
-    right: 0;
+    right: -350px;
     z-index: 2;
 }

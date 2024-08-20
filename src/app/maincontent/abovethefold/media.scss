@@ -27,6 +27,11 @@
 
 @media screen and (max-width: 1100px) {
 
+    section {
+        height: calc(100vh - 130px - 90px) !important;
+        position: relative;
+    }
+
     main {
         flex-direction: column;
         align-items: center !important;
@@ -34,14 +39,14 @@
     }
 
     .about-me-container {
-        height: 260px;
+        height: 228px;
         margin-right: 0;
+
     }
 
     .about-me {
         display: flex;
         justify-content: center;
-
 
         div:nth-child(1) {
             position: relative !important;
@@ -64,14 +69,14 @@
     }
 
     .atf-bottom-background {
-        top: 390px;
+        top: 290px;
     }
 
 }
 
 @media screen and (max-width: 700px) {
     .links-container {
-        a {
+        a:last-child {
             display: none;
         }
     }
@@ -83,7 +88,7 @@
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
     .my-data {
         >h1 {
             font-size: 45px !important;
@@ -94,21 +99,130 @@
         }
     }
 
-    .i-am-de{
-        font-size:20px !important;
+    .i-am-de {
+        font-size: 20px !important;
     }
+
+    main {
+        position: unset;
+    }
+
+    .about-me-container {
+        position: absolute;
+        bottom: 0 !important;
+    }
+    
+
 
 
 }
 
-@media screen and (min-width:2200px) {
+// @media screen and (max-width: 1500px) {
+
+
+//     main {
+//         position: unset;
+//     }
+
+//     .about-me-container {
+//         position: absolute;
+//         bottom: 50px;
+//     }
+    
+
+// }
+
+@media screen and (min-width:1920px) {
     section {
         position: relative;
+        height: auto;
     }
 
     .atf-bottom-background {
-        height: 15vh;
+        height: 20vh;
         bottom: 0;
         top: unset;
+    }
+}
+
+@media screen and (max-height:700px) {
+    .atf-bottom-background {
+        top: 210px;
+    }
+
+}
+
+@media screen and (min-height:1100px){
+    section {
+        position: relative;
+        height: auto !important;
+    }
+}
+
+
+
+@media screen and (max-height:665px) {
+    .links-container {
+        z-index: -5 !important;
+    }
+    .about-me-container {
+        position: relative;
+        margin-top: -65px;
+        z-index:30;    }
+
+
+    section {
+       min-height:550px;
+    }
+
+    .atf-bottom-background {
+        top: 350px;
+    }
+}
+
+// @media screen and (min-height:700px) {
+//     section{
+//         height:auto;
+//     }
+// }
+
+@media screen and (min-height:1200px) {
+    .atf-bottom-background{
+        height:5vh;
+    }
+}
+
+@media (max-height:700px) and (min-width:1500px){
+    .atf-bottom-background{
+      display:none !important;
+    }
+}
+
+@media screen and (min-height:1200px) and (max-width :1920px){
+    .atf-bottom-background {
+        height: 35vh;
+}}
+
+@media screen and (min-height:1000px) and (min-width :780px){
+    section{
+        height:calc(100vh - 130px - 179px) !important;
+    }
+
+    .about-me-container{
+       position: unset;
+
+    }
+
+    .my-data {
+        h1{
+            font-size: 90px !important;
+        }
+        h2{
+            font-size: 50px !important;
+        }
+    }
+
+    .deg-90{
+        font-size: 40px !important;
     }
 }

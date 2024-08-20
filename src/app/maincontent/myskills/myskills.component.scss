@@ -10,6 +10,8 @@
     max-width:1920px;
     background-color: #141D2F;
     position: relative;
+   
+
 
 
     @include mixins.dFlex(space-between, center, 0);
@@ -27,8 +29,8 @@
 
 .green-img{
     position: absolute;
-    bottom:-600px;
-    left:-600px;
+    bottom: -90px;
+    left: -500px;
     z-index: 1;
 }
 

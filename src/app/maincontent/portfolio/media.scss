@@ -1,6 +1,6 @@
 @use "./../../../styles.scss" as mixins;
 
-@media screen and (max-width:1060px){
+@media screen and (max-width:1225px){
     .project-main-container{
         position: relative;
         z-index:30;
@@ -8,9 +8,9 @@
         flex-direction: column;
         align-items: center;
 
-        img{
-            margin-left:-50px;
-        }
+        // img{
+        //     margin-left:-50px;
+        // }
     }
 
     .project-describe{
@@ -30,7 +30,7 @@
     }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:740px){
     .side-img{
         left:-550px;
     }

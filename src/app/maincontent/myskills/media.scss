@@ -1,11 +1,6 @@
 @use "./../../../styles.scss" as mixins;
 
 @media screen and (max-width: 1200px) {
-    .my-skills-container {
-        h2 {
-            font-size: 70px;
-        }
-    }
 
     .my-skils-icons {
         gap: 30px;
@@ -31,7 +26,6 @@
         padding-left: 8%;
         box-sizing: border-box;
         font-size: 16px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         gap:24px;
 
         .my-skills-headline {

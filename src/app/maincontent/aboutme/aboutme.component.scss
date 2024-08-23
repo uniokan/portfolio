@@ -50,6 +50,10 @@ main{
         width:409px;
         border: 2px solid mixins.$line-green;
         border-radius: 50%;
+        object-fit:cover;
+        object-position: 0 20%;
+
+   
     }
     div{
         height:2px;

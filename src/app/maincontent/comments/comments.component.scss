@@ -9,6 +9,16 @@ section {
     max-width: 1920px;
 }
 
+.group-members{
+    height:309px;
+    width:309px;
+    border: 2px solid mixins.$line-violett;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0 22%;
+
+
+}
 
 .side-imgg{
     position: absolute;
@@ -28,6 +38,7 @@ section {
     @include mixins.dFlex(none, center, 0);
     position: relative;
     z-index: 10;
+    margin-top: -30px;
 
 }
 

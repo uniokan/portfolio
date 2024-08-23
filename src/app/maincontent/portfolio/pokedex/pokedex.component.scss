@@ -2,18 +2,30 @@
     img {
         height: 379px;
         width: 620px;
-        margin-right: -50px !important;
         object-fit: contain;
     }
 }
 
-@media screen and (max-width:515px) {
+@media screen and (max-width:1225px) {
+    .project-main-container {
+        img {
+           margin-left:-30px;
+        }
+}}
+
+@media screen and (max-width:540px) {
     .project-main-container {
         img {
             height: 225px;
             width: 300px;
-            margin-right: -50px !important;
         }
 
     }
-}               
+}          
+
+@media screen and (max-width:540px) {
+    .project-main-container {
+        img {
+           margin-left:0 !important;
+        }
+}}
